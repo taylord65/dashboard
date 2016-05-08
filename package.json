@@ -1,0 +1,14 @@
+{
+  "name": "dashboard",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "chart.js": "^2.1.2",
+    "meteor-node-stubs": "~0.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

@@ -1,0 +1,127 @@
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+
+</head>
+<body class="application">
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../">
+          <span class="glyphicons glyphicons-soccer-ball"></span>
+        </a>
+        <a class="navbar-brand" href="./">Dashboard Starter UI</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="https://keen.io">Home</a></li>
+          <li><a href="https://keen.io/team">Team</a></li>
+          <li><a href="https://github.com/keenlabs/dashboards/tree/gh-pages/examples/starter-kit">Source</a></li>
+          <li><a href="https://groups.google.com/forum/#!forum/keen-io-devs">Community</a></li><li><a href="http://stackoverflow.com/questions/tagged/keen-io?sort=newest&pageSize=15">Technical Support</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-sm-8">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Profile
+          </div>
+          <div class="chart-stage">
+            Content
+          </div>
+          <div class="chart-notes">
+            This is a sample text region to describe this chart.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Statistics
+          </div>
+          <div class="chart-stage">
+            <canvas id="myRadarChart" width="400" height="400"></canvas>
+          </div>
+          <div class="chart-notes">
+            Notes go down here
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="row">
+
+      <div class="col-sm-4">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Map
+          </div>
+          <div class="chart-stage">
+            <div id="chart-03"></div>
+          </div>
+          <div class="chart-notes">
+            Notes go down here
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Impressions by device
+          </div>
+          <div class="chart-stage">
+            <div id="chart-04"></div>
+          </div>
+          <div class="chart-notes">
+            Notes go down here
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Impressions by country
+          </div>
+          <div class="chart-stage">
+            <div id="chart-05"></div>
+          </div>
+          <div class="chart-notes">
+            Notes go down here
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
+  <script src="Chart.js"></script>
+  <script>
+      var myRadarChart = new Chart(ctx, {
+      type: 'radar',
+      data: data,
+      options: options
+  });
+  </script> 
+
+</body>
